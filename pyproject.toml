@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "contract-note-parser"
+version = "2.0.0"
+authors = [
+    { name = "Arham Begani" }
+]
+description = "Python API library for parsing Indian stock market Equity Contract Notes with broker template system."
+readme = "README.md"
+requires-python = ">=3.8"
+keywords = ["contract-note", "pdf-parser", "zerodha", "shoonya", "systematix", "equity", "finance", "stocks"]
+license = { text = "MIT" }
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Financial and Insurance Industry",
+    "Intended Audience :: Developers",
+    "Topic :: Office/Business :: Financial :: Investment",
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent"
+]
+dependencies = [
+    "pdfplumber>=0.10.0",
+    "reportlab>=4.0.0",
+    "psutil>=5.9.0",
+    "requests>=2.28.0"
+]
+
+[project.scripts]
+contract-note-parser = "contract_note_parser:main"
+
+[project.urls]
+Homepage = "https://github.com/Arham-1313/file_parser"
