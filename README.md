@@ -127,36 +127,6 @@ The included `server_manager.py` script provides unified server management for l
 
 ---
 
-## 🌐 Deploying to Get a Live Website Link
-
-### Method A: Free Permanent Cloud Hosting on Render (Recommended)
-1. Push this repository to your GitHub account (`https://github.com/<username>/<repo>`).
-2. Go to [Render.com](https://render.com/) and create a free account.
-3. Click **New +** → **Web Service** → Connect your GitHub repository.
-4. Settings:
-   - **Environment:** `Python 3`
-   - **Build Command:** `pip install -r requirements.txt`
-   - **Start Command:** `python app.py`
-5. Click **Deploy Web Service**. You will receive a permanent public link like:  
-   `https://file-parser-r7b0.onrender.com`
-6. Save it to your server manager:
-   ```bash
-   python server_manager.py set-url https://file-parser-r7b0.onrender.com
-   ```
-
-### Method B: Instant 30-Second Public Link (Local Tunnel)
-While your local server is running, generate a live public URL immediately:
-```bash
-python server_manager.py tunnel
-```
-Or directly with:
-```bash
-npx localtunnel --port 5000
-```
-This gives an instant live public HTTPS URL (e.g. `https://cool-server.loca.lt`) that anyone can open to inspect your running application!
-
----
-
 ## 📡 REST API Reference
 
 ### 1. Parse Contract Note
