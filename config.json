@@ -1,9 +1,0 @@
-{
-  "host": "0.0.0.0",
-  "port": 5000,
-  "website_url": "https://contract-note-parser.onrender.com",
-  "github_url": "https://github.com/Arham-1313/file_parser",
-  "project_name": "Contract Note Parser & Financial Web Platform",
-  "author_name": "Arham Begani",
-  "project_type": "Personal Open Source Project"
-}
